@@ -11454,7 +11454,6 @@ textarea.form-control-lg {
 }
 
 .cta-info {
-  padding: 3rem;
   margin: 1rem 0;
 }
 .cta-info__list {
@@ -11472,9 +11471,6 @@ textarea.form-control-lg {
   font-size: 1.2rem;
 }
 
-.form {
-  padding: 3rem;
-}
 .form button {
   border: none;
   color: #fff;
