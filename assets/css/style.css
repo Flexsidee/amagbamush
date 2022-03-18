@@ -1,4 +1,25 @@
 @charset "UTF-8";
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #201717;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6c757d;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11259,6 +11280,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
 }
+
 .services {
   position: relative;
   padding: 1rem 0;
@@ -11328,7 +11350,7 @@ textarea.form-control-lg {
 
 .footer {
   padding: 0rem;
-  background-color: #061f06;
+  background-color: #010301;
 }
 
 .contact-box {
