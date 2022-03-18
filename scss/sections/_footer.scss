@@ -2,12 +2,8 @@
 @use "../components/mixins" as *;
 
 .footer {
-	padding: 1rem;
+	padding: 0rem;
 	background-color: $footer;
-}
-
-.footer-sm {
-	background-color: $footer-light;
 }
 
 //style the contact box
@@ -16,7 +12,7 @@
 
 	&__icon {
 		width: 2rem;
-		stroke: $primary;
+		stroke: $white;
 		padding-top: 0.5rem;
 
 		@include media-breakpoint-up(sm) {
@@ -51,6 +47,7 @@
 }
 
 .footer-sm {
+	background-color: $footer-light;
 	a {
 		color: $white;
 
@@ -65,35 +62,20 @@
 	}
 }
 
-//style the company info content
-.company-list {
-	display: block;
-	list-style-type: none;
-	position: relative;
-
-	li {
-		margin-bottom: 0.5rem;
-		text-decoration: none;
-
-		a {
-			color: $white;
-			text-decoration: none;
-
-			&:hover {
-				color: $primary;
-			}
-		}
-	}
-}
-
 //style the footer copyright content
 .footer-bottom {
 	background-color: $footer-light;
 	font-size: 110%;
 
 	&__copyright {
-		color: $gray-600;
+		color: $gray-400;
 		font-weight: 400;
+
+		@media screen and (max-width: 425px) {
+			span {
+				display: block;
+			}
+		}
 	}
 }
 
